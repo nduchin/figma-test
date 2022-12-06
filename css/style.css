@@ -478,6 +478,7 @@ img{
   min-height: 100vh;
   background: url(../img/intro-bg.jpg) no-repeat;
   background-size: cover;
+  padding-bottom: 223px;
 }
 .intro__title{
   padding-top: 263px;

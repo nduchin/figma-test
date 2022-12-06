@@ -135,12 +135,12 @@ a:focus {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-/*
+
 a:active,
 a:hover {
     outline: 0;
 }
-*/
+
 /**
  * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
  * 2. Improve image quality when scaled in IE 7.
@@ -413,6 +413,28 @@ img{
   max-width: 1060px;
   margin: 0 auto;
 }
+.wrapper_full{
+  max-width: 1260px;
+  margin: 0 auto;
+}
+.section_title{
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 42px;
+  color: #102746;
+  position: relative;
+  padding-bottom: 10px;
+}
+.section_title::after{
+  display: block;
+  content: '';
+  width: 253px;
+  height: 3px;
+  background-color: #006DFE;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 /* Header styles start */
 .header{
   position: fixed;
@@ -595,3 +617,104 @@ img{
   background: url(../img/svg/benefits-card-arrow.svg) no-repeat right center;
 }
 /*Benefits styles end */
+
+/*Places styles start */
+.places{
+  margin-bottom: 131px;
+}
+.places__caption{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 36px
+}
+.places__view-all-link{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  text-decoration: none;
+  padding-right: 59px;
+  background: url(../img/svg/benefits-card-arrow.svg) no-repeat right center;
+  color: #006DFE;
+  transition: .3s;
+}
+.places__title{
+  margin-right: 20px;
+}
+.places__view-all-link:hover, .places__view-all-link:focus{
+  color: #6820c5 ;
+}
+.places__cards{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  column-gap: 10px;
+  row-gap: 10px;
+}
+.place-card{
+  position: relative;
+  overflow: hidden;
+}
+.place-card::after{
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(21, 24, 36, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transition: 1s all;
+}
+.place-card:hover  .place-card-pic{
+  transform: scale(1.1);
+}
+.place-card:hover .place-card-title{
+  font-size: 45px;
+  font-weight: 900;
+  color: rgb(255, 121, 73);
+}
+.place-card:hover::after{
+  background-color: rgba(21, 24, 36, .1);
+}
+.place-card-title{
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 27px;
+  left: 29px;
+  z-index: 3;
+  transition: 1s all;
+}
+.place-card-size-lg{
+  grid-column: span 3;
+}
+.place-card-size-sm{
+  grid-column: span 2;
+}
+.place-card-pic{
+  width: 100%;
+  
+  object-fit: cover;
+  transition: 1s all;
+}
+.place-card-pic-size-lg{
+  height: 354px;
+}
+.place-card-pic-size-sm{
+  height: 283px;
+}
+.place-card-link{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+
+/*Places styles end */

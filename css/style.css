@@ -410,8 +410,8 @@ body{
   max-width: 1060px;
   margin: 0 auto;
 }
+/* Header styles start */
 .header{
-  background-color: gray;
   position: fixed;
   top: 0;
   left: 0;
@@ -443,3 +443,15 @@ body{
 .header__link:hover, .header__link:focus, .header__link:active{
   color: orangered;
 }
+/* Header styles end */
+
+
+/* Intro styles start */
+
+.intro{
+  height: 100vh;
+  background: url(../img/intro-bg.jpg) no-repeat;
+  background-size: cover;
+}
+
+/* Intro styles end */

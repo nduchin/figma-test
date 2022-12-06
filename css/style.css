@@ -135,12 +135,12 @@ a:focus {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-
+/*
 a:active,
 a:hover {
     outline: 0;
 }
-
+*/
 /**
  * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
  * 2. Improve image quality when scaled in IE 7.
@@ -405,7 +405,10 @@ body{
   color: #102746;
   ;
 }
-
+img{
+  max-width: 100%;
+  height: auto;
+}
 .wrapper{
   max-width: 1060px;
   margin: 0 auto;
@@ -439,6 +442,7 @@ body{
   line-height: 24px;
   color: #FFFFFF;
   text-decoration: none;
+  transition: .5s all;
 }
 .header__link:hover, .header__link:focus, .header__link:active{
   color: orangered;
@@ -512,3 +516,82 @@ body{
   background-color: #196ddb;
 }
 /* Intro styles end */
+
+/*Benefits styles start */
+.benefits{
+  margin-bottom: 131px;
+}
+.benefits_wrap{
+  max-width: 1260px;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+  position: relative;
+}
+.benefits__title{
+  width: 100%;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 42px;
+  color: #102746;
+  padding: 93px 100px 88px 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+  background-color: #FFFFFF;
+}
+.befefits__cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 55px;
+  padding: 32px 100px 112px 100px;
+}
+.befefits__card{
+  grid-column: span 1;
+}
+.benefits__card-pic{
+  max-width: 66px;
+  margin-bottom: 37px;
+}
+.benefits__card-thumb{
+  display: block;
+}
+.benefits__card-title{
+  max-width: 317px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 26px;
+}
+.benefits__card-subtitle{
+  max-width: 317px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 39px;
+}
+.benefits__card-link{
+  display: inline-block;
+  padding-right: 59px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #006DFE;
+  text-decoration: none;
+  background: url(../img/svg/benefits-card-arrow.svg) no-repeat 95% center;
+  transition: .2s all;
+};
+.benefits__card-link-text{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #006DFE;
+  text-decoration: none;
+}
+.benefits__card-link:hover, .benefits__card-link:focus {
+  background: url(../img/svg/benefits-card-arrow.svg) no-repeat right center;
+}
+/*Benefits styles end */

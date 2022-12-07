@@ -778,12 +778,12 @@ img{
   row-gap: 58px;
 }
 .ttv__card{
-  position: relative;
-  overflow: hidden;
   width: 392;
   grid-column: span 1;
 }
 .ttv__card-frame{
+  position: relative;
+  overflow: hidden;
   margin-bottom: 45px;
   height: 377px;
 }

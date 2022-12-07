@@ -674,7 +674,6 @@ img{
 }
 .place-card:hover .place-card-title{
   font-size: 45px;
-  font-weight: 900;
   color: rgb(255, 121, 73);
 }
 .place-card:hover::after{

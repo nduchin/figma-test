@@ -699,7 +699,6 @@ img{
 }
 .place-card-pic{
   width: 100%;
-  
   object-fit: cover;
   transition: 1s all;
 }
@@ -766,6 +765,103 @@ img{
 /*Tours styles end */
 
 /*Top-to-visit styles start */
-
-
+.ttv{
+  margin-bottom: 144px;
+}
+.ttv__title{
+  margin-bottom: 54px;
+}
+.ttv__cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 58px;
+  row-gap: 58px;
+}
+.ttv__card{
+  position: relative;
+  overflow: hidden;
+  width: 392;
+  grid-column: span 1;
+}
+.ttv__card-frame{
+  margin-bottom: 45px;
+  height: 377px;
+}
+.ttv__card-frame:hover .ttv__card-pic, .ttv__card-frame:hover .ttv__card-pic{
+  transform: scale(1.2);
+}
+.ttv__card-pic{
+  width: 100%;
+  max-height: 377px;
+  object-fit: cover;
+  transition: 1s all;
+}
+.ttv__card-lable{
+  position: absolute;
+  transform:translateY(-100%);
+  width: 100%;
+  height: 55px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: rgba(21, 24, 36, 0.6);
+}
+.ttv__card-title{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-align: left;
+  text-transform: uppercase;
+  left: 25px;
+  z-index: 3;
+  /*transition: 1s all;*/
+}
+.ttv__card-reactions{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: right;
+}
+.ttv__card-likes{
+  margin-right: 14px;
+  text-align: right;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  padding-right: 20px;
+  background: transparent url(../img/svg/like-icon.svg) no-repeat right center;
+}
+.ttv__card-reviews{
+  text-align: right;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  padding-right: 20px;
+  background: transparent url(../img/svg/review-icon.svg) no-repeat right center;
+}
+.ttv__card-desc{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 31px;
+}
+.ttv__card-link{
+  background-color: #006DFE;
+  text-decoration: none;
+  text-align: center;
+  padding: 12px 19px;
+  color: #FFFFFF;
+  width: 118px;
+  height: 42px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 12px 19px;
+  margin-bottom: 12px;
+}
 /*Top-to-visit styles end */

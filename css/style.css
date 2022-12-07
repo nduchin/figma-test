@@ -785,7 +785,6 @@ img{
   position: relative;
   overflow: hidden;
   margin-bottom: 45px;
-  height: 377px;
 }
 .ttv__card-frame:hover .ttv__card-pic, .ttv__card-frame:hover .ttv__card-pic{
   transform: scale(1.2);
@@ -863,5 +862,8 @@ img{
   line-height: 19px;
   padding: 12px 19px;
   margin-bottom: 12px;
+}
+.ttv__card-link:hover, .ttv__card-link:focus{
+  background-color: #0256c4
 }
 /*Top-to-visit styles end */
